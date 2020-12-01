@@ -112,11 +112,11 @@ p{
 /** header **/
 
 .hero {
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 1rem;
+    padding-top: 2rem;
 }
 
-.hero .hero-img {
+.hero .hero-img{
     max-width: 350px;
     display: block;
     margin: auto;

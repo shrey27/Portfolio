@@ -20,6 +20,11 @@ hr {
 
 p{
     padding:1rem 0rem;
+    color:white;
+}
+
+h1,h3{
+    color:darkgoldenrod;
 }
 /** spaces **/
 

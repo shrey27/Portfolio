@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Code+Pro:wght@600&display=swap');
+
+:root {
+    --primary-color: #047857;
+    --off-yellow: #FCD34D;
+    --dark-gray: #6B7280;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color:#111827;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    border-bottom-left-radius: 1rem;
+    display:grid;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.logo{
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.head{
+    font-family: 'Share Tech', sans-serif;
+    float:left;
+    margin-left: 1rem;
+}
+.navigation .nav-pills {
+    padding: 6px;
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: #B91C1C;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-yellow);
+    border-top-right-radius: 1rem;
+}
+
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+}
+
+.logo_git{
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+}
+.logo_linkedin{
+    width: 25px;
+    height:25px;
+}
+

@@ -54,7 +54,8 @@ h1,h3{
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white
+    color: white;
+    margin-left:250px;
 }
 
 .link-secondary {
@@ -62,8 +63,6 @@ h1,h3{
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
-
-/** look into BEM naming convention for CSS **/
 
 /** lists **/
 
@@ -185,6 +184,7 @@ h1,h3{
     color:black;
 }
 
+/* Logo */
 .logo_git{
     border-radius: 50%;
     width: 25px;

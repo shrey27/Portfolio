@@ -6,8 +6,16 @@
     --primary-color: #047857;
     --off-yellow: #FCD34D;
     --dark-gray: #6B7280;
+    --primary-white: white;
 }
 
+@media only screen and (min-width: 600px) {
+    .list-item-inline {
+        text-decoration: none;
+        display: none;
+        padding: 0rem 0rem;
+    }
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
@@ -26,6 +34,7 @@ p{
 h1,h3{
     color:darkgoldenrod;
 }
+
 /** spaces **/
 
 .margin-md {
@@ -40,13 +49,23 @@ h1,h3{
 .container-center {
     max-width: 600px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-projects{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    padding:1rem;
 }
 
 /** links **/
 .link {
     box-sizing: border-box;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     font-size: medium;
     
 }
@@ -56,10 +75,11 @@ h1,h3{
     border-radius: 0.5rem;
     color: white;
     margin-left:0px;
+    margin-right: 1rem;
 }
 
 .link-secondary {
-    color: var(--primary-color);
+    color: var(--primary-white);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
@@ -72,7 +92,7 @@ h1,h3{
 
 .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0rem;
 }
 
 /** navigation **/
@@ -83,10 +103,6 @@ h1,h3{
     padding: 5px;
     border-bottom-left-radius: 1rem;
     display:grid;
-}
-
-.navigation .nav-brand {
-    font-weight: bold;
 }
 
 .logo{
@@ -107,10 +123,6 @@ h1,h3{
 
 .navigation .link {
     color: white;
-}
-
-.navigation .link-active {
-    font-weight: bold;
 }
 
 /** header **/
@@ -158,20 +170,20 @@ h1,h3{
     text-align: center;
 
 }
-
+ 
 .ow {
     background-color: var(--off-yellow);
-    border-top-right-radius: 1rem;
+    border-radius: 9rem;
 }
 
 /** footers **/
 
 .footer {
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     color: white;
-    border-top-right-radius: 1rem;
+    border-radius: 3rem;
 }
 
 .footer .link {
@@ -180,18 +192,19 @@ h1,h3{
 
 .footer .footer-header {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     color:black;
+    padding-bottom:1rem;
 }
 
+.footer .footer-logo{
+    padding:0rem 0.5rem;
+}
 /* Logo */
 .logo_git{
     border-radius: 50%;
-    width: 25px;
-    height:25px;
+    width: 35px;
+    height:35px;
 }
-.logo_linkedin{
-    width: 25px;
-    height:25px;
-}
+
 
